@@ -157,3 +157,39 @@ console.log(words[6]);
 // give me
 
 console.log(words.length)
+//  const newwords = words;
+//   newwords[2]= "pimeapple";
+
+  for(  let i=0;i<words.length ;i++)
+    {
+    console.log(words[i]);
+  }
+
+
+//function 
+// let a=12;
+// let  b=15;
+// sum(a,b);
+
+// function sum (a,b){
+//    let sum=a+b;
+//    console.log(sum); 
+  
+// }
+// a function expession is very simila to and has almost the same syntax
+// as a function declaration .the main difference between a function and a f
+//function declaration is the function name,which can be omitted in function
+// expression to create anonymous funciton.
+
+
+//Nested funciton 
+function addSquares(a,b){
+    function square(x){
+        return  x*x;
+    }
+    return square(a)+square(b);
+}
+const a = addSquares(2,3);//return 13
+const b = addSquares(3,4);//return 25
+console.log(a);
+console.log(b);
