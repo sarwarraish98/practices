@@ -48,7 +48,7 @@
 
 // const x = 3;
 // const y = 4;
- 
+
 // const z =  x+ y;
 // console.log (z);
 
@@ -64,7 +64,7 @@
 // if(number >= 0){
 //     //code
 //     console.log(number)
-    
+
 // }
 // else{
 //     //code
@@ -120,39 +120,40 @@
 
 
 // for loop 
- 
-for( let i=0; i<=5; i++)
-    {
-    console.log("Raees" ,i);
+
+for (let i = 0; i <= 5; i++) {
+    console.log("Raees", i);
 
 }
-let step = 0 ;
-while(step < 5  ){
+let step = 0;
+while (step < 5) {
 
-    console.log("sarwar",step);
-   step +=1;
+    console.log("sarwar", step);
+    step += 1;
 }
 
 
 //do while loop
 
-let way =0;
-do{
-    
-   
+let way = 0;
+do {
+
+
     // if(way===2){
     //     continue;
-       
-    // }
-    console.log('way',way);
-    way +=1;
 
-} while(way<5);
+    // }
+    console.log('way', way);
+    way += 1;
+
+} while (way < 5);
 
 
 /// array 
 // an array is an object that can store multiple values at once.
 
-const words = ["apple","banana","cherry",12];
-console.log(words);
+const words = ["apple", "banana", "cherry", 12, true ,{name:"Anuj",},function hello(){console.log("hellow world");}];
+console.log(words[6]);
 // give me
+
+console.log(words.length)
