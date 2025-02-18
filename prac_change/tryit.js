@@ -183,15 +183,19 @@ console.log(words.length)
 
 
 //Nested funciton 
-function addSquares(a,b){
-    function square(x){
-        return  x*x;
-    }
-    return square(a)+square(b);
-}
-const a = addSquares(2,3);//return 13
-const b = addSquares(3,4);//return 25
-console.log(a);
-console.log(b);
+// function addSquares(a,b){
+//     function square(x){
+//         return  x*x;
+//     }
+//     return square(a)+square(b);
+// }
+// const a = addSquares(2,3);//return 13
+// const b = addSquares(3,4);//return 25
+// console.log(a);
+// console.log(b);
 
- 
+
+//promise
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("demo").innerHTML = "Hello JavaScript";
+});git 
