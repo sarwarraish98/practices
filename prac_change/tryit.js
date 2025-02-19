@@ -121,48 +121,48 @@
 
 // for loop 
 
-for (let i = 0; i <= 5; i++) {
-  console.log("Raees", i);
+// for (let i = 0; i <= 5; i++) {
+//   console.log("Raees", i);
 
-}
-let step = 0;
-while (step < 5) {
+// }
+// let step = 0;
+// while (step < 5) {
 
-  console.log("sarwar", step);
-  step += 1;
-}
+//   console.log("sarwar", step);
+//   step += 1;
+// }
 
 
 //do while loop
 
-let way = 0;
-do {
+// let way = 0;
+// do {
 
 
-  // if(way===2){
-  //     continue;
+//   // if(way===2){
+//   //     continue;
 
-  // }
-  console.log('way', way);
-  way += 1;
+//   // }
+//   console.log('way', way);
+//   way += 1;
 
-} while (way < 5);
+// } while (way < 5);
 
 
 /// array 
 // an array is an object that can store multiple values at once.
 
-const words = ["apple", "banana", "cherry", 12, true, { name: "Anuj", }, function hello() { console.log("hellow world"); }];
-console.log(words[6]);
-// give me
+// const words = ["apple", "banana", "cherry", 12, true, { name: "Anuj", }, function hello() { console.log("hellow world"); }];
+// console.log(words[6]);
+// // give me
 
-console.log(words.length)
-//  const newwords = words;
-//   newwords[2]= "pimeapple";
+// console.log(words.length)
+// //  const newwords = words;
+// //   newwords[2]= "pimeapple";
 
-for (let i = 0; i < words.length; i++) {
-  console.log(words[i]);
-}
+// for (let i = 0; i < words.length; i++) {
+//   console.log(words[i]);
+// }
 
 
 //function 
@@ -199,41 +199,110 @@ for (let i = 0; i < words.length; i++) {
 //   document.getElementById("demo").innerHTML = "Hello JavaScript";
 // });
 
-const a = 12;
-const b = 4;
-sum(a, b);
+// const a = 12;
+// const b = 4;
+// sum(a, b);
 
 
-const c = 2;
-const d = 24;
-sum(c, d);
+// const c = 2;
+// const d = 24;
+// sum(c, d);
 
-const e = 5;
-const f = 14;
-sum(e, f);
+// const e = 5;
+// const f = 14;
+// sum(e, f);
 
-function sum(a, b) {
-  const sum = a + b;
-  console.log("result", sum);
-}
+// function sum(a, b) {
+//   const sum = a + b;
+//   console.log("result", sum);
+// }
 
 
 //function expression
 // let num= 4;
-const square = function(num){
-  return num*num;
-};
-console.log(square(6));
+// const square = function (num) {
+//   return num * num;
+// };
+// console.log(square(6));
 
 
-//Nested Function 
+// //Nested Function 
 
-function addSquares(a,b){
-  const sa = square(a);
-  const sb = square(b);
-      function square(num){
-        return num+num;
-      }
-  return sa +sb;
+// function addSquares(a, b) {
+//   const sa = square(a);
+//   const sb = square(b);
+//   function square(num) {
+//     return num + num;
+//   }
+//   return sa + sb;
+// }
+// console.log(addSquares(3, 4));
+
+
+
+//ADVANCE FUNCTION   ES9 VERSION FEATURE OF JAVASCRIPT
+// How to find a call back function 
+// it allows you to create function in  a cleaner way compared to regular 
+// function .Here are some of the valid syntax for arrow function:
+
+// function greet() {
+//   console.log("hello world greet");
+// }
+
+// greet();
+
+//
+// const greet = (count) => {
+//   for (let i = 0; i < count; i++) console.log("hellow brother");
+    
+// };
+// // const variable = {} => {
+
+// // }
+// // variable();
+
+// greet(3);
+
+
+// sqare
+
+// const square = (num) => num*num;
+// console.log (square(3));
+
+
+// call back function 
+
+// A callback is a function passed as an argument to another function.
+
+
+function greet(name , callback){
+  console.log('hii'+ '' +name);
+  callback();
 }
-console.log(addSquares(3,4));
+
+function callMe(){
+  console.log(' I am callback function');
+}
+greet('Peter',callMe);
+
+
+// call back addition 
+
+const calculate = (a,b,operation) => {
+  return operation(a,b);
+};
+
+//method 1
+
+const addition = calculate(3,4,function(num1,num2) {
+  return num1 + num2;
+});
+console.log(addition);
+
+//method 2
+
+const subtraction  = (a,b) => a+b;
+
+const subResult  = calculate(8,3,subtraction);
+
+console.log(subResult);
