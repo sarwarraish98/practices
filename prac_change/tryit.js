@@ -122,14 +122,14 @@
 // for loop 
 
 for (let i = 0; i <= 5; i++) {
-    console.log("Raees", i);
+  console.log("Raees", i);
 
 }
 let step = 0;
 while (step < 5) {
 
-    console.log("sarwar", step);
-    step += 1;
+  console.log("sarwar", step);
+  step += 1;
 }
 
 
@@ -139,12 +139,12 @@ let way = 0;
 do {
 
 
-    // if(way===2){
-    //     continue;
+  // if(way===2){
+  //     continue;
 
-    // }
-    console.log('way', way);
-    way += 1;
+  // }
+  console.log('way', way);
+  way += 1;
 
 } while (way < 5);
 
@@ -152,7 +152,7 @@ do {
 /// array 
 // an array is an object that can store multiple values at once.
 
-const words = ["apple", "banana", "cherry", 12, true ,{name:"Anuj",},function hello(){console.log("hellow world");}];
+const words = ["apple", "banana", "cherry", 12, true, { name: "Anuj", }, function hello() { console.log("hellow world"); }];
 console.log(words[6]);
 // give me
 
@@ -160,10 +160,9 @@ console.log(words.length)
 //  const newwords = words;
 //   newwords[2]= "pimeapple";
 
-  for(  let i=0;i<words.length ;i++)
-    {
-    console.log(words[i]);
-  }
+for (let i = 0; i < words.length; i++) {
+  console.log(words[i]);
+}
 
 
 //function 
@@ -174,7 +173,7 @@ console.log(words.length)
 // function sum (a,b){
 //    let sum=a+b;
 //    console.log(sum); 
-  
+
 // }
 // a function expession is very simila to and has almost the same syntax
 // as a function declaration .the main difference between a function and a f
@@ -195,7 +194,46 @@ console.log(words.length)
 // console.log(b);
 
 
-//promise
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("demo").innerHTML = "Hello JavaScript";
-});git 
+// //promise
+// document.addEventListener("DOMContentLoaded", function () {
+//   document.getElementById("demo").innerHTML = "Hello JavaScript";
+// });
+
+const a = 12;
+const b = 4;
+sum(a, b);
+
+
+const c = 2;
+const d = 24;
+sum(c, d);
+
+const e = 5;
+const f = 14;
+sum(e, f);
+
+function sum(a, b) {
+  const sum = a + b;
+  console.log("result", sum);
+}
+
+
+//function expression
+// let num= 4;
+const square = function(num){
+  return num*num;
+};
+console.log(square(6));
+
+
+//Nested Function 
+
+function addSquares(a,b){
+  const sa = square(a);
+  const sb = square(b);
+      function square(num){
+        return num+num;
+      }
+  return sa +sb;
+}
+console.log(addSquares(3,4));
